@@ -8,7 +8,8 @@ use toml_edit::{DocumentMut, Item, Table, value};
 
 use super::error::{Error, Result};
 
-pub const DEFAULT_BASE_URL: &str = "https://jira-dc.paloaltonetworks.com";
+/// A placeholder. Set the real server with `JUI_BASE_URL` or `jira.base_url` in the config file.
+pub const DEFAULT_BASE_URL: &str = "https://jira.example.com";
 pub const DEFAULT_MY_TICKETS_JQL: &str =
     "assignee = currentUser() AND statusCategory != Done ORDER BY updated DESC";
 pub const DEFAULT_PROJECT: &str = "BCE";

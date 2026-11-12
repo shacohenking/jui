@@ -183,7 +183,7 @@
    },
    "name": "Reporter",
    "fieldId": "reporter",
-   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/latest/user/search?username=",
+   "autoCompleteUrl": "https://jira.example.com/rest/api/latest/user/search?username=",
    "hasDefaultValue": false,
    "operations": [
     "set"
@@ -198,7 +198,7 @@
    },
    "name": "Linked Issues",
    "fieldId": "issuelinks",
-   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/2/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=null&query=",
+   "autoCompleteUrl": "https://jira.example.com/rest/api/2/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=null&query=",
    "hasDefaultValue": false,
    "operations": [
     "add"
@@ -309,7 +309,7 @@
    },
    "name": "Labels",
    "fieldId": "labels",
-   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/1.0/labels/suggest?query=",
+   "autoCompleteUrl": "https://jira.example.com/rest/api/1.0/labels/suggest?query=",
    "hasDefaultValue": false,
    "operations": [
     "add",
@@ -382,7 +382,7 @@
    },
    "name": "Product Manager",
    "fieldId": "customfield_13302",
-   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/1.0/users/picker?fieldName=customfield_13302&query=",
+   "autoCompleteUrl": "https://jira.example.com/rest/api/1.0/users/picker?fieldName=customfield_13302&query=",
    "hasDefaultValue": false,
    "operations": [
     "set"
@@ -543,7 +543,7 @@
    },
    "name": "Assignee",
    "fieldId": "assignee",
-   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/latest/user/assignable/search?issueKey=null&username=",
+   "autoCompleteUrl": "https://jira.example.com/rest/api/latest/user/assignable/search?issueKey=null&username=",
    "hasDefaultValue": false,
    "operations": [
     "set"

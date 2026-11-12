@@ -4,11 +4,23 @@ jui is a personal Jira client for one Jira Data Center server. It has a CLI and 
 
 ## Install
 
-You must have Rust 1.88 or a newer version. Do this command in this directory:
+You must have Rust 1.88 or a newer version.
+
+### One-liner
+
+```sh
+cargo install --git https://github.com/shacohenking/jui --locked
+```
+
+### From a clone
+
+Do this command in the directory of the repository:
 
 ```sh
 cargo install --path . --locked
 ```
+
+### After the install
 
 Cargo puts the `jui` binary in `~/.cargo/bin`. Make sure that `~/.cargo/bin` is in your `PATH`:
 
@@ -23,23 +35,30 @@ If `command -v jui` shows nothing, add this line to `~/.zshrc`, and then open a 
 export PATH="$HOME/.cargo/bin:$PATH"
 ```
 
-## Update
+## Required environment variables
 
-After a change to the code, do the same command again:
+jui has no built-in Jira server. Set these two variables before you start jui. Add them to `~/.zshrc` (or your shell profile) to keep them:
 
 ```sh
-cargo install --path . --locked
+export JUI_BASE_URL="https://jira.your-company.com"   # your Jira Data Center server
+export JIRA_TOKEN="<your personal access token>"      # see "Token" below
+```
+
+Instead of `JUI_BASE_URL`, you can set `jira.base_url` in the config file (`jui config set jira.base_url https://jira.your-company.com`). Without one of them, jui uses the placeholder `https://jira.example.com`, and every request fails.
+
+## Update
+
+Do the install command again (the one-liner, or `cargo install --path . --locked` in a clone):
+
+```sh
+cargo install --git https://github.com/shacohenking/jui --locked --force
 ```
 
 Cargo builds jui again and replaces the old binary. There is no update command.
 
 ## Token
 
-jui reads the token only from the `JIRA_TOKEN` environment variable. jui sends it as `Authorization: Bearer <token>`. jui does not keep the token in the config file.
-
-```sh
-export JIRA_TOKEN="<your personal access token>"
-```
+jui reads the token only from the `JIRA_TOKEN` environment variable. jui sends it as `Authorization: Bearer <token>`. jui does not keep the token in the config file. Create a personal access token in your Jira profile.
 
 ## Settings
 

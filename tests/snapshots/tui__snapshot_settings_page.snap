@@ -31,6 +31,6 @@ expression: "draw(&mut st, 110, 32)"
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 jira.base_url  The Jira server. JUI_BASE_URL replaces it.
-Default: https://jira-dc.paloaltonetworks.com
+Default: https://jira.example.com
 JUI_BASE_URL replaces this value. Enter edits the file value: https://jira.example
 | j/k move · Enter edit · d default · E edit file · r read file · ? help
