@@ -1,0 +1,12 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 8)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ Settings ────────────────────────────────────────────────────────────────────────────────────────┐
+│  Setting              Value                                                              Source  │
+│Jira                                                                                              │
+│  Base URL             https://jira.example                                               default │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────────────────────────────────────────
+| j/k move · Enter edit · d default · E edit file · r read file · ? help

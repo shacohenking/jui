@@ -1,0 +1,5 @@
+{"maxResults":50,"startAt":0,"isLast":true,"values":[
+ {"id":20744,"self":"https://jira.example/rest/agile/1.0/sprint/20744","state":"future","name":"BCE Sprint 1","startDate":"2023-08-28T12:00:00.000-07:00","endDate":"2023-09-11T12:00:00.000-07:00","originBoardId":2709,"synced":false,"autoStartStop":false},
+ {"id":43198,"self":"https://jira.example/rest/agile/1.0/sprint/43198","state":"active","name":"BCE-26-Sprint-21","startDate":"2026-10-12T01:07:00.000-07:00","endDate":"2026-10-25T00:07:00.000-07:00","activatedDate":"2026-10-12T01:08:22.401-07:00","originBoardId":4166,"goal":"","synced":false,"autoStartStop":true,"incompleteIssuesDestinationId":43199},
+ {"id":43199,"self":"https://jira.example/rest/agile/1.0/sprint/43199","state":"future","name":"BCE-26-Sprint-22","originBoardId":4166,"synced":false,"autoStartStop":false}
+]}

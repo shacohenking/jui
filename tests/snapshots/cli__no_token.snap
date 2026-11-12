@@ -1,0 +1,6 @@
+---
+source: tests/cli.rs
+expression: "String::from_utf8_lossy(&out.stderr)"
+---
+error: JIRA_TOKEN is not set.
+  hint: Make a Personal Access Token in Jira (Profile > Personal Access Tokens) and export JIRA_TOKEN.

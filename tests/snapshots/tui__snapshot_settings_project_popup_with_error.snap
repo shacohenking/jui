@@ -1,0 +1,34 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 30)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ Settings · /tmp/jui-test/config.toml ────────────────────────────────────────────────────────────┐
+│  Setting              Value                                                              Source  │
+│Jira                                                                                              │
+│  Base URL             https://jira.example                                               default │
+│  Timeout (seconds)    30                                                                 default │
+│                                                                                                  │
+│Tickets                                                                                           │
+│  My Tickets JQL       assignee = currentUser() AND statusCategory != Done ORDER BY …     default │
+│  Group by Sprint      off                                                                default │
+│  Default pro┌ Default project ─────────────────────────────────────────────────────┐     file    │
+│  Default Tic│ Short keys (62886 becomes BCE-62886), new Tickets, and the Board     │     default │
+│             │ suggestions.                                                         │             │
+│Editor       │                                                                      │             │
+│  Editor comm│ Value: NOPE▏                                                         │     default │
+│             │                                                                      │             │
+│Display      │ Project NOPE does not exist, or you cannot see it.                   │             │
+│  Date format│                                                                      │     default │
+│  Colors (CLI│ Enter save · Ctrl-U clear · Esc close                                │     default │
+│             └──────────────────────────────────────────────────────────────────────┘             │
+│Boards                                                                                            │
+│  Only my Tickets      off                                                                default │
+│                                                                                                  │
+│Sprint                                                                                            │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────────────────────────────────────────
+tickets.default_project  Short keys (62886 becomes BCE-62886), new Tickets, and the Board
+suggestions.
+Default: BCE
+| j/k move · Enter edit · d default · E edit file · r read file · ? help

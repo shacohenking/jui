@@ -1,0 +1,26 @@
+[
+  {
+    "id": "201",
+    "name": "BCE bugs",
+    "description": "Open bugs in BCE",
+    "owner": {"name": "shacohen", "displayName": "Shahar Cohen"},
+    "jql": "project = BCE AND type = Bug AND resolution = Unresolved",
+    "viewUrl": "https://jira.example/issues/?filter=201",
+    "favourite": true
+  },
+  {
+    "id": "202",
+    "name": "BCE bugs (all)",
+    "owner": {"name": "shacohen", "displayName": "Shahar Cohen"},
+    "jql": "project = BCE AND type = Bug",
+    "favourite": true
+  },
+  {
+    "id": "203",
+    "name": "My open work",
+    "owner": {"name": "jdoe", "displayName": "Jane Doe"},
+    "jql": "assignee = currentUser() AND statusCategory != Done",
+    "viewUrl": "https://jira.example/issues/?filter=203",
+    "favourite": true
+  }
+]

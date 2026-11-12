@@ -1,0 +1,4 @@
+{"sections":[{"label":"Recent Boards","id":"greenhopper_menu_dropdown_recent","items":[
+ {"label":"PostOps Stitch","title":"View Scrum Board 'PostOps Stitch'","id":"rapidb_lnk_4537","url":"/secure/RapidBoard.jspa?rapidView=4537&useStoredSettings=true"},
+ {"label":"BCE board","title":"View Scrum Board 'BCE board'","id":"rapidb_lnk_4166","url":"/secure/RapidBoard.jspa?rapidView=4166"}]},
+ {"id":"greenhopper_menu_dropdown","items":[{"label":"View all boards","id":"ghx-manageviews-mlink","url":"/secure/ManageRapidViews.jspa"}]}]}

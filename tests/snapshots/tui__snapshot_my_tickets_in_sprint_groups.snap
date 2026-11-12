@@ -1,0 +1,20 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 120, 16)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets (5 of 9)───────────────────────────────────────┐┌Preview───────────────────────────────────────────────────┐
+│  Key   Status      Summary                               ││BCE-4  Summary of Ticket 4                                │
+│  BCE-26-Sprint-21 (active) · 2+                          ││To Do · Task · Major                                      │
+│  BCE-2 To Do       Summary of Ticket 2                   ││Assignee   Unassigned                                     │
+│▶ BCE-4 To Do       Summary of Ticket 4                   ││                                                          │
+│                                                          ││Goal 4                                                    │
+│  BCE-26-Sprint-22 (future) · 1+                          ││                                                          │
+│  BCE-1 To Do       Summary of Ticket 1                   ││Text of Ticket 4.                                         │
+│                                                          ││                                                          │
+│  No Sprint · 2+                                          ││Loading comments, Sub-tasks, and Links…                   │
+│  BCE-0 In Progress Summary of Ticket 0                   ││                                                          │
+│  BCE-3 In Progress Summary of Ticket 3                   ││                                                          │
+│  Loadi                                                   ││                                                          │
+└──────────────────────────────────────────────────────────┘└──────────────────────────────────────────────────────────┘
+| j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w watch · y copy · ? help

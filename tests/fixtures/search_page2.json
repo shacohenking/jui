@@ -1,0 +1,25 @@
+{
+  "expand": "schema,names",
+  "startAt": 2,
+  "maxResults": 2,
+  "total": 3,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "100003",
+      "self": "https://jira.example/rest/api/2/issue/100003",
+      "key": "XSUP-1182",
+      "fields": {
+        "summary": "Customer cannot download the report",
+        "issuetype": { "id": "10100", "name": "Task", "subtask": false, "avatarId": 10318 },
+        "assignee": null,
+        "priority": null,
+        "updated": "2026-10-15T08:00:00.000-0700",
+        "customfield_10020": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@7a3b4c1[activatedDate=<null>,autoStartStop=false,completeDate=<null>,endDate=<null>,goal=,id=43199,incompleteIssuesDestinationId=<null>,name=BCE-26-Sprint-22,rapidViewId=4166,sequence=43199,startDate=<null>,state=FUTURE,synced=false]"
+        ],
+        "status": { "name": "Blocked", "id": "10300", "statusCategory": { "id": 4, "key": "indeterminate", "colorName": "inprogress", "name": "In Progress" } }
+      }
+    }
+  ]
+}

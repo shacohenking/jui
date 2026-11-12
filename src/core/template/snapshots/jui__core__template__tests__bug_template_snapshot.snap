@@ -1,0 +1,53 @@
+---
+source: src/core/template/tests.rs
+expression: "create_template(&bug(), &Preset::default())"
+---
++++
+# Create a Ticket of type Bug in BCE. Save and close the editor to create it.
+# Close with no changes to cancel. Lines that start with # are help.
+project = "BCE"
+type = "Bug"
+
+# --- Required ---
+summary = ""
+# Permitted: AppSec-Frontend, ASPM-Application, ASPM-CICD, ASPM-ConnectX, ASPM-Nexus, CAS-Documentation, CAS-Managers, CAS-products, CAS-Tech-leaders, DCO-DataStream, ... (12 values, see the list below the scissors line)
+components = []
+# Permitted: Critical, Major, Moderate, Minor, Normal
+severity = ""                 # customfield_11908
+# Permitted: Yes, No
+detected_in_production = ""   # customfield_26910
+# Permitted: Yes, No
+regression = ""               # customfield_26903
+# Permitted: unified-pc-february, unified-pc-february-HF3, Prisma
+affects_versions = []
+
+# --- Optional (remove the # to use) ---
+# assignee = "me"
+# priority = ""               # Permitted: Blocker, High, Medium, Low
+# labels = []
+# epic = ""                   # customfield_10016
+# fix_versions = []           # Permitted: unified-pc-february, unified-pc-february-HF3, Prisma
+# story_points = 1            # customfield_10021
+# reporter = "me"
++++
+
+Write the description here in Markdown.
+
+# ------------------------ >8 ------------------------
+# jui ignores this line and all lines below it.
+#
+# components (all 12 values):
+#   AppSec-Frontend, ASPM-Application, ASPM-CICD, ASPM-ConnectX, ASPM-Nexus,
+#   CAS-Documentation, CAS-Managers, CAS-products, CAS-Tech-leaders, DCO-DataStream,
+#   DCO-DXCore, DCO-Flow
+#
+# Other fields that you can add to the header:
+#   bug_source = ...  (Bug Source, one permitted value)
+#   environment = ...  (Environment, text)
+#   steps_to_reproduce = ...  (Steps To Reproduce, text)
+#   quality_debt = ...  (Quality-debt, one permitted value)
+#   cdl = ...  (CDL, text)
+#   cdl_region = ...  (CDL Region, one permitted value)
+#   hotfix = ...  (Hotfix, list of permitted values)
+#   cortex_pm = ...  (Cortex PM-, username)
+#   deployment_type = ...  (Deployment Type, one permitted value)

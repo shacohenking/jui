@@ -1,0 +1,24 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 20)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+ Sprint › BCE-0
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Labels     reliability
+Components Scanner
+Fix ver.   4.2    ┌ Move BCE-0 to a Sprint ──────────────────────────────────────┐
+Created    2026-10│ Filter: ▏                                                    │
+Updated    2026-10│ Board: BCE board                                             │
+                  │                                                              │
+Goal              │ ▶ BCE-26-Sprint-21  active  (now)                            │
+                  │   BCE-26-Sprint-22  future                                   │
+The client must re│   Backlog  (no Sprint)                                       │
+• Use backoff     │                                                              │
+• Max 5 retries   │ Type to filter · ↑↓ select · Enter move · Esc close          │
+                  └──────────────────────────────────────────────────────────────┘
+@rroe please review. Important
+
+Sub-tasks (1)
+▶ BCE-62890 To Do Write unit tests
+| j/k select · Enter open · Esc back · t move · c comment · l Link · L Worklog · u upload · ? help

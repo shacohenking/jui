@@ -1,0 +1,34 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 30)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets (5)──────────────────────────────────┐┌Preview─────────────────────────────────────────┐
+│  Key   Status      Summary                     ││BCE-0  Add retry to the upload client           │
+│▶ BCE-0 In Progress Add retry to the upload clie││In Progress · Task · Major                      │
+│  BCE-1 To Do       Summary of Ticket 1         ││Assignee   Jane Doe (jdoe)                      │
+│  BCE-2 To Do       Summary of Ticket 2         ││Reporter   Rick Roe (rroe)                      │
+│  BCE-3 In Progress Summary of Ticket 3         ││Watchers   you watch · 2 watchers               │
+│  BCE-4 To Do       Summary of Ticket 4         ││Epic       BCE-47921 Scanner reliability        │
+│                                                ││Sprint     BCE-26-Sprint-21 (active)            │
+│                                                ││Points     3                                    │
+│                                                ││Labels     reliability                          │
+│                 ┌ Assign BCE-0 ────────────────────────────────────────────────┐                 │
+│                 │ User: jdo▏                                                   │)                │
+│                 │                                                              │                 │
+│                 │   Jane Doe  jdoe  (now)                                      │                 │
+│                 │ ▶ John Doe  jdoe2                                            │                 │
+│                 │                                                              │03.              │
+│                 │ Type to search · ↑↓ select · Enter assign · Esc close        │                 │
+│                 └──────────────────────────────────────────────────────────────┘                 │
+│                                                ││                                                │
+│                                                ││@rroe please review. Important                  │
+│                                                ││                                                │
+│                                                ││Sub-tasks (1)                                   │
+│                                                ││  BCE-62890 To Do Write unit tests              │
+│                                                ││                                                │
+│                                                ││Links (2)                                       │
+│                                                ││  blocks     BCE-63001 To Do Release checklist  │
+│                                                ││  relates to BCE-61200 Done  Upload timeouts    │
+└────────────────────────────────────────────────┘└────────────────────────────────────────────────┘
+j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w watch · y copy · ? help

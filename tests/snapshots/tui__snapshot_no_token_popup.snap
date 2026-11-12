@@ -1,0 +1,18 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 14)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets──────────────────────────────────────┐┌Preview─────────────────────────────────────────┐
+│ No data.┌ jui cannot start ────────────────────────────────────────────────────────────┐         │
+│         │                                                                              │         │
+│         │ JIRA_TOKEN is not set.                                                       │         │
+│         │                                                                              │         │
+│         │ Make a Personal Access Token in Jira (Profile > Personal Access Tokens) and  │         │
+│         │ export JIRA_TOKEN.                                                           │         │
+│         │                                                                              │         │
+│         │ Push q to quit.                                                              │         │
+│         └──────────────────────────────────────────────────────────────────────────────┘         │
+│                                                ││                                                │
+└────────────────────────────────────────────────┘└────────────────────────────────────────────────┘
+j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w watch · y copy · ? help

@@ -1,0 +1,6 @@
+{"id":4533,"name":"BCE Kanban Board","type":"kanban","filter":{"id":"96374"},
+ "subQuery":{"query":"fixVersion is EMPTY"},
+ "columnConfig":{"columns":[
+  {"name":"Backlog","statuses":[]},
+  {"name":"To Do","statuses":[{"id":"10000"}]},
+  {"name":"Done","statuses":[{"id":"10001"}]}]}}

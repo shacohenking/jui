@@ -1,0 +1,36 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 110, 32)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ Settings · /tmp/jui-test/config.toml ──────────────────────────────────────────────────────────────────────┐
+│  Setting              Value                                                                        Source  │
+│Jira                                                                                                        │
+│  Base URL             http://127.0.0.1:9                                                           env     │
+│  Timeout (seconds)    30                                                                           default │
+│                                                                                                            │
+│Tickets                                                                                                     │
+│  My Tickets JQL       assignee = currentUser() AND statusCategory != Done ORDER BY updated DE…     default │
+│  Group by Sprint      off                                                                          default │
+│  Default project      BCE                                                                          file    │
+│  Default Ticket type  Task                                                                         default │
+│                                                                                                            │
+│Editor                                                                                                      │
+│  Editor command       code --wait                                                                  file    │
+│                                                                                                            │
+│Display                                                                                                     │
+│  Date format          relative                                                                     default │
+│  Colors (CLI)         auto                                                                         default │
+│                                                                                                            │
+│Boards                                                                                                      │
+│  Only my Tickets      off                                                                          default │
+│                                                                                                            │
+│Sprint                                                                                                      │
+│  Only my Tickets      off                                                                          default │
+│                                                                                                            │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+jira.base_url  The Jira server. JUI_BASE_URL replaces it.
+Default: https://jira-dc.paloaltonetworks.com
+JUI_BASE_URL replaces this value. Enter edits the file value: https://jira.example
+| j/k move · Enter edit · d default · E edit file · r read file · ? help

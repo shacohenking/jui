@@ -1,0 +1,45 @@
+{
+  "id": "100001",
+  "key": "BCE-62886",
+  "fields": {
+    "summary": "Add retry to the upload client",
+    "issuetype": { "id": "10100", "name": "Task", "subtask": false },
+    "status": { "name": "In Progress", "id": "3", "statusCategory": { "id": 4, "key": "indeterminate", "name": "In Progress" } },
+    "priority": { "name": "Major", "id": "3" },
+    "assignee": { "name": "jdoe", "key": "JIRAUSER1", "displayName": "Jane Doe", "active": true },
+    "reporter": { "name": "rroe", "key": "JIRAUSER2", "displayName": "Rick Roe", "active": true },
+    "labels": ["reliability"],
+    "components": [{ "id": "1", "name": "Scanner" }],
+    "fixVersions": [{ "id": "2", "name": "4.2" }],
+    "created": "2026-10-10T09:00:00.000-0700",
+    "updated": "2026-10-19T00:30:46.000-0700",
+    "description": "h3. Goal\nThe client must retry on *HTTP 503*.\n* Use backoff\n* Max {{5}} retries\n\n[~rroe] please review. {color:#de350b}Important{color}",
+    "subtasks": [
+      { "id": "1", "key": "BCE-62890", "fields": { "summary": "Write unit tests", "status": { "name": "To Do", "statusCategory": { "key": "new" } }, "issuetype": { "name": "Sub-task" } } }
+    ],
+    "issuelinks": [
+      { "id": "501", "type": { "id": "10000", "name": "Blocks", "inward": "is blocked by", "outward": "blocks" },
+        "outwardIssue": { "id": "2", "key": "BCE-63001", "fields": { "summary": "Release checklist", "status": { "name": "To Do", "statusCategory": { "key": "new" } }, "issuetype": { "name": "Task" } } } },
+      { "id": "502", "type": { "id": "10003", "name": "Relates", "inward": "relates to", "outward": "relates to" },
+        "inwardIssue": { "id": "3", "key": "BCE-61200", "fields": { "summary": "Upload timeouts", "status": { "name": "Done", "statusCategory": { "key": "done" } }, "issuetype": { "name": "Bug" } } } }
+    ],
+    "attachment": [
+      { "id": "900", "filename": "trace.log", "author": { "name": "jdoe", "displayName": "Jane Doe" }, "created": "2026-10-11T09:00:00.000-0700", "size": 2048, "mimeType": "text/plain", "content": "https://jira.example/secure/attachment/900/trace.log" }
+    ],
+    "comment": {
+      "startAt": 0, "maxResults": 1000, "total": 2,
+      "comments": [
+        { "id": "7001", "author": { "name": "rroe", "displayName": "Rick Roe" }, "body": "Please also cover *429*.", "created": "2026-10-12T09:00:00.000-0700", "updated": "2026-10-12T09:00:00.000-0700" },
+        { "id": "7002", "author": { "name": "jdoe", "displayName": "Jane Doe" }, "body": "Done. See {{retry.rs}}.", "created": "2026-10-13T09:00:00.000-0700", "updated": "2026-10-13T09:00:00.000-0700" }
+      ]
+    },
+    "worklog": {
+      "startAt": 0, "maxResults": 20, "total": 1,
+      "worklogs": [
+        { "id": "300", "author": { "name": "jdoe", "displayName": "Jane Doe" }, "started": "2026-10-12T10:00:00.000-0700", "timeSpent": "1h 30m", "timeSpentSeconds": 5400, "comment": "Investigation" }
+      ]
+    },
+    "customfield_10016": "BCE-47921",
+    "customfield_10021": 3.0
+  }
+}

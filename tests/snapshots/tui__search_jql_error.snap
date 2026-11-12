@@ -1,0 +1,14 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 120, 10)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ JQL ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│project = BCE AND type = Bug AND                                                                                      │
+│Error in the JQL Query: Expecting a field name.                                                                       │
+└────────────────────────────────────────────────────────────────── Enter run · ↑↓ history · Ctrl-F filters · Esc list ┘
+┌Search────────────────────────────────────────────────────┐┌Preview───────────────────────────────────────────────────┐
+│ Correct the JQL above.                                   ││                                                          │
+│                                                          ││                                                          │
+└──────────────────────────────────────────────────────────┘└──────────────────────────────────────────────────────────┘
+| Type JQL · Enter run · ↑↓ history · Ctrl-F filters · Esc go to the list

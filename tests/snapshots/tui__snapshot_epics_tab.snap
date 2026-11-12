@@ -1,0 +1,14 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 120, 10)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌Epics (2)─────────────────────────────────────────────────┐┌Preview───────────────────────────────────────────────────┐
+│  Key    Mine Statu Summary                               ││BCE-7  Epic BCE-7                                         │
+│▶ BCE-7  2    To Do Epic BCE-7                            ││To Do · Epic · Major                                      │
+│  CRTX-9 1    Done  Epic CRTX-9                           ││Assignee   Unassigned                                     │
+│                                                          ││                                                          │
+│                                                          ││Goal 1                                                    │
+│                                                          ││                                                          │
+└──────────────────────────────────────────────────────────┘└──────────────────────────────────────────────────────────┘
+| j/k move · Enter zoom (Tickets of the Epic) · t move · c comment · r refresh · ? help

@@ -1,0 +1,53 @@
+---
+source: tests/cli.rs
+expression: v
+---
+[
+  {
+    "assignee": {
+      "display_name": "Jane Doe",
+      "name": "jdoe"
+    },
+    "key": "BCE-62886",
+    "priority": "Major",
+    "sprint": null,
+    "status": "In Progress",
+    "status_category": "in_progress",
+    "summary": "Add retry to the upload client",
+    "type": "Task",
+    "updated": "2026-10-19T00:30:46-07:00"
+  },
+  {
+    "assignee": {
+      "display_name": "Jane Doe",
+      "name": "jdoe"
+    },
+    "key": "BCE-63337",
+    "priority": "Critical",
+    "sprint": {
+      "id": 43198,
+      "name": "BCE-26-Sprint-21",
+      "state": "active"
+    },
+    "status": "In Pull Request",
+    "status_category": "in_progress",
+    "summary": "Crash when the policy list is empty",
+    "type": "Bug",
+    "updated": "2026-10-18T10:00:00-07:00"
+  },
+  {
+    "assignee": null,
+    "key": "XSUP-1182",
+    "priority": null,
+    "sprint": {
+      "id": 43199,
+      "name": "BCE-26-Sprint-22",
+      "state": "future"
+    },
+    "status": "Blocked",
+    "status_category": "in_progress",
+    "summary": "Customer cannot download the report",
+    "type": "Task",
+    "updated": "2026-10-15T08:00:00-07:00"
+  }
+]

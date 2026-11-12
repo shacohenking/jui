@@ -1,0 +1,64 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 120, 60)"
+---
+ 1 My Tickets │ 2 Boards┌ Keys (any key closes) ───────────────────────────────────────────────┐
+┌My Tickets (6)─────────│j ↓        Move down                                                  │───────────────────────┐
+│  Key   Status      Sum│k ↑        Move up                                                    │                       │
+│▶ BCE-0 In Progress Sum│g          First row                                                  │                       │
+│  BCE-1 To Do       Sum│G          Last loaded row (gets the next page)                       │                       │
+│  BCE-2 To Do       Sum│J          Scroll the preview or the zoom down                        │                       │
+│  BCE-3 In Progress Sum│K          Scroll the preview or the zoom up                          │                       │
+│  BCE-4 To Do       Sum│Ctrl-d     Scroll half a page down                                    │                       │
+│  BCE-5 To Do       Sum│Ctrl-u     Scroll half a page up                                      │                       │
+│                       │Enter      Open the zoom (in the zoom: open the Sub-task or Link)     │                       │
+│                       │Esc        Go back one step, close a popup                            │nks…                   │
+│                       │Tab        Next tab                                                   │                       │
+│                       │Shift-Tab  Previous tab                                               │                       │
+│                       │1          My Tickets                                                 │                       │
+│                       │2          Boards                                                     │                       │
+│                       │3          Sprint                                                     │                       │
+│                       │4          Epics                                                      │                       │
+│                       │5          Search                                                     │                       │
+│                       │6          Settings                                                   │                       │
+│                       │r          Get the data again from Jira                               │                       │
+│                       │t          Transition (move to a different Status)                    │                       │
+│                       │o          Open the Ticket in the browser                             │                       │
+│                       │?          This help                                                  │                       │
+│                       │!          The last errors, with details                              │                       │
+│                       │q          Quit (in the zoom: go back)                                │                       │
+│                       │Ctrl-c     Quit from all views                                        │                       │
+│                       │/          Search with JQL (the Search tab, ↑↓ history)               │                       │
+│                       │Ctrl-f     Run a favourite filter (or a filter ID)                    │                       │
+│                       │c          Add a comment (Ctrl-E in the popup opens $EDITOR)          │                       │
+│                       │a          Assign (user picker: me, none, or a search)                │                       │
+│                       │e          Edit the Ticket, the comment, or the Worklog in $EDITOR    │                       │
+│                       │n          Create a Ticket in a form (in an Epic zoom: in that Epic)  │                       │
+│                       │w          Watch or unwatch                                           │                       │
+│                       │y          Copy the key to the clipboard                              │                       │
+│                       │                                                                      │                       │
+│                       │In the zoom only                                                      │                       │
+│                       │N          Create a Sub-task of this Ticket in a form                 │                       │
+│                       │W          Edit the description or the comment as raw wiki            │                       │
+│                       │l          Add a Link (select the relation, then type the key)        │                       │
+│                       │L          Add a Worklog (Ctrl-E in the popup opens $EDITOR)          │                       │
+│                       │s          Move to a Sprint or to the backlog                         │                       │
+│                       │E          Set or remove the Epic                                     │                       │
+│                       │u          Upload a file (type or paste the path)                     │                       │
+│                       │d          Delete the selected comment, Worklog, Link, or attachment  │                       │
+│                       │                                                                      │                       │
+│                       │On the Boards tab                                                     │                       │
+│                       │h ←        Column to the left                                         │                       │
+│                       │l →        Column to the right                                        │                       │
+│                       │[          Previous Board in My Boards                                │                       │
+│                       │]          Next Board in My Boards                                    │                       │
+│                       │+          Board picker: add or remove Boards in My Boards            │                       │
+│                       │x          Remove this Board from My Boards                           │                       │
+│                       │m          Show only my Tickets, or all Tickets (saved in the Settings│                       │
+│                       │                                                                      │                       │
+│                       │On the Sprint tab                                                     │                       │
+│                       │[          Previous active Sprint, or the backlog                     │                       │
+│                       │]          Next active Sprint, or the backlog                         │                       │
+│                       │m          Show only my Tickets, or all Tickets (saved in the Settings│                       │
+└───────────────────────│                                                                      │───────────────────────┘
+| j/k move · Enter zoom └──────────────────────────────────────────────────────────────────────┘help

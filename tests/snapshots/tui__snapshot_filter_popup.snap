@@ -1,0 +1,18 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 14)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ JQL ─────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+└─────────┌ Favourite filters ───────────────────────────────────────────────────────────┐ filters ┘
+┌Search───│ Filter: ▏                                                                    │─────────┐
+│         │                                                                              │         │
+│  Push / │   201  BCE bugs  project = BCE AND type = Bug                                │         │
+│         │ ▶ 203  My open work  assignee = currentUser() AND statusCategory != Done     │         │
+│    proje│                                                                              │         │
+│    text │ Type to filter, or a filter ID · ↑↓ select · Enter run · Esc close           │         │
+│    repor└──────────────────────────────────────────────────────────────────────────────┘         │
+│                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+| / edit JQL · Ctrl-F filters · j/k move · Enter zoom · t move · c comment · a assign · ? help

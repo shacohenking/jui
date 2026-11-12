@@ -1,0 +1,9 @@
+{
+  "id": "100001",
+  "key": "BCE-62886",
+  "fields": {
+    "sprint": { "id": 43198, "state": "active", "name": "BCE-26-Sprint-21", "startDate": "2026-10-07T00:00:00.000-07:00", "endDate": "2026-10-21T00:00:00.000-07:00", "originBoardId": 4166, "goal": "" },
+    "closedSprints": [{ "id": 43197, "state": "closed", "name": "BCE-26-Sprint-20" }],
+    "epic": { "id": 1, "key": "BCE-47921", "name": "Scanner reliability", "summary": "Scanner reliability Q4", "color": { "key": "color_1" }, "done": false }
+  }
+}

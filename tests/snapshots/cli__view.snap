@@ -1,0 +1,46 @@
+---
+source: tests/cli.rs
+expression: without_relative_dates(&text)
+---
+BCE-62886  Add retry to the upload client
+In Progress · Task · Major
+Assignee   Jane Doe (jdoe)
+Reporter   Rick Roe (rroe)
+Epic       BCE-47921 Scanner reliability
+Sprint     BCE-26-Sprint-21 (active)
+Points     3
+Labels     reliability
+Components Scanner
+Fix ver.   4.2
+Created    2026-10-10 09:00
+Updated    2026-10-19 00:30
+URL        http://jira.test/browse/BCE-62886
+
+Goal
+
+The client must retry on HTTP 503.
+• Use backoff
+• Max 5 retries
+
+@rroe please review. Important
+
+Sub-tasks (1)
+  BCE-62890    To Do                Write unit tests
+
+Links (2)
+  blocks             BCE-63001    To Do                Release checklist
+  relates to         BCE-61200    Done                 Upload timeouts
+
+Attachments (1)
+  trace.log  2 KB
+
+Worklogs (1, total 1h 30m)
+  2026-10-12  1h 30m   jdoe  Investigation
+
+Comments (2)
+
+  @rroe  #7001  2026-10-12 09:00
+    Please also cover 429.
+
+  @jdoe  #7002  2026-10-13 09:00
+    Done. See retry.rs.

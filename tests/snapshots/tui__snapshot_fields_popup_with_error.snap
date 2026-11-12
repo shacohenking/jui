@@ -1,0 +1,26 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 22)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets (6)──────────────────────────────────┐┌Preview─────────────────────────────────────────┐
+│  Key   Status      Summary                     ││BCE-0  Summary of Ticket 0                      │
+│▶ BCE-0 In Progress Summary of Ticket 0         ││In Progress · Task · Major                      │
+│  BCE-1 To Do       Summary of Ticket 1         ││Assignee   Unassigned                           │
+│  BCE-2 To Do       Summary of Ticket 2         ││                                                │
+│  BCE-3 In Progre┌ Move BCE-0 to Done ──────────────────────────────────────────┐                 │
+│  BCE-4 To Do    │ The Transition to Done needs these fields:                   │                 │
+│  BCE-5 To Do    │                                                              │                 │
+│                 │ Resolution: Won't Do▏                                        │                 │
+│                 │   ▶ Won't Do                                                 │d Links…         │
+│                 │   Resolution is required.                                    │                 │
+│                 │                                                              │                 │
+│                 │ Enter accept · Tab next field · Esc cancel                   │                 │
+│                 └──────────────────────────────────────────────────────────────┘                 │
+│                                                ││                                                │
+│                                                ││                                                │
+│                                                ││                                                │
+│                                                ││                                                │
+│                                                ││                                                │
+└────────────────────────────────────────────────┘└────────────────────────────────────────────────┘
+| j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w watch · y copy · ? help

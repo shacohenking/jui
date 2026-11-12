@@ -1,0 +1,5 @@
+{"expand":"names,schema","startAt":0,"maxResults":50,"total":3,"issues":[
+ {"id":"3958100","key":"BCE-51605","fields":{"summary":"Scans Management as a Control Plane","customfield_10017":null,"customfield_10018":"Scans Management as a Control Plane"}},
+ {"id":"3314091","key":"BCE-13070","fields":{"summary":"Proxy - Cider Integration MVP - GitHub, GitLab","customfield_10017":{"self":"x","value":"In Progress","id":"10001"},"customfield_10018":"Proxy - Cider Integration MVP"}},
+ {"id":"3314000","key":"BCE-13000","fields":{"summary":"Old epic with no name","customfield_10017":{"self":"x","value":"Done","id":"10002"},"customfield_10018":null}}
+]}

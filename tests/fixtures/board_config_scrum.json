@@ -1,0 +1,5 @@
+{"id":4166,"name":"BCE board","type":"scrum","filter":{"id":"117549"},
+ "columnConfig":{"columns":[
+  {"name":"To Do","statuses":[{"id":"10000"}]},
+  {"name":"In Progress","statuses":[{"id":"3"}]},
+  {"name":"Done","statuses":[{"id":"10001"}]}]}}

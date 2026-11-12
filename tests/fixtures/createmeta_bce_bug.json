@@ -1,0 +1,724 @@
+{
+ "maxResults": 200,
+ "startAt": 0,
+ "total": 28,
+ "isLast": true,
+ "values": [
+  {
+   "required": true,
+   "schema": {
+    "type": "string",
+    "system": "summary"
+   },
+   "name": "Summary",
+   "fieldId": "summary",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "issuetype",
+    "system": "issuetype"
+   },
+   "name": "Issue Type",
+   "fieldId": "issuetype",
+   "hasDefaultValue": false,
+   "operations": [],
+   "allowedValues": [
+    {
+     "id": "10102",
+     "name": "Bug",
+     "subtask": false,
+     "avatarId": 10303
+    }
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "array",
+    "items": "component",
+    "system": "components"
+   },
+   "name": "Component/s",
+   "fieldId": "components",
+   "hasDefaultValue": false,
+   "operations": [
+    "add",
+    "set",
+    "remove"
+   ],
+   "allowedValues": [
+    {
+     "id": "50500",
+     "name": "AppSec-Frontend"
+    },
+    {
+     "id": "53745",
+     "name": "ASPM-Application"
+    },
+    {
+     "id": "47104",
+     "name": "ASPM-CICD"
+    },
+    {
+     "id": "54758",
+     "name": "ASPM-ConnectX"
+    },
+    {
+     "id": "47210",
+     "name": "ASPM-Nexus"
+    },
+    {
+     "id": "45901",
+     "name": "CAS-Documentation"
+    },
+    {
+     "id": "45902",
+     "name": "CAS-Managers"
+    },
+    {
+     "id": "45904",
+     "name": "CAS-products"
+    },
+    {
+     "id": "45905",
+     "name": "CAS-Tech-leaders"
+    },
+    {
+     "id": "45912",
+     "name": "DCO-DataStream"
+    },
+    {
+     "id": "45920",
+     "name": "DCO-DXCore"
+    },
+    {
+     "id": "47201",
+     "name": "DCO-Flow"
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "string",
+    "system": "description"
+   },
+   "name": "Description",
+   "fieldId": "description",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 11908
+   },
+   "name": "Severity",
+   "fieldId": "customfield_11908",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Critical",
+     "id": "44419",
+     "disabled": false
+    },
+    {
+     "value": "Major",
+     "id": "44420",
+     "disabled": false
+    },
+    {
+     "value": "Moderate",
+     "id": "44421",
+     "disabled": false
+    },
+    {
+     "value": "Minor",
+     "id": "44422",
+     "disabled": false
+    },
+    {
+     "value": "Normal",
+     "id": "52663",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "user",
+    "system": "reporter"
+   },
+   "name": "Reporter",
+   "fieldId": "reporter",
+   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/latest/user/search?username=",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "any",
+    "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+    "customId": 10016
+   },
+   "name": "Epic Link",
+   "fieldId": "customfield_10016",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 26910
+   },
+   "name": "Detected in Production?",
+   "fieldId": "customfield_26910",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Yes",
+     "id": "41029",
+     "disabled": false
+    },
+    {
+     "value": "No",
+     "id": "41030",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 19283
+   },
+   "name": "Bug Source",
+   "fieldId": "customfield_19283",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Cortex",
+     "id": "46404",
+     "disabled": false
+    },
+    {
+     "value": "Prisma",
+     "id": "46405",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 26903
+   },
+   "name": "Regression",
+   "fieldId": "customfield_26903",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Yes",
+     "id": "44423",
+     "disabled": false
+    },
+    {
+     "value": "No",
+     "id": "44424",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "array",
+    "items": "version",
+    "system": "versions"
+   },
+   "name": "Affects Version/s",
+   "fieldId": "versions",
+   "hasDefaultValue": false,
+   "operations": [
+    "set",
+    "add",
+    "remove"
+   ],
+   "allowedValues": [
+    {
+     "id": "96972",
+     "name": "v0.193.0",
+     "archived": true,
+     "released": false,
+     "projectId": 32046
+    },
+    {
+     "id": "96973",
+     "name": "v0.192.0",
+     "archived": true,
+     "released": true,
+     "userReleaseDate": "04/Dec/22",
+     "projectId": 32046,
+     "releaseDate": "2022-12-04"
+    },
+    {
+     "id": "97064",
+     "name": "unified-pc-february",
+     "archived": false,
+     "released": true,
+     "userStartDate": "04/Nov/24",
+     "userReleaseDate": "15/Feb/25",
+     "projectId": 32046,
+     "startDate": "2024-11-04",
+     "releaseDate": "2025-02-15"
+    },
+    {
+     "id": "100424",
+     "name": "unified-pc-february-HF3",
+     "archived": false,
+     "released": true,
+     "userReleaseDate": "29/Mar/25",
+     "projectId": 32046,
+     "releaseDate": "2025-03-29"
+    },
+    {
+     "id": "100929",
+     "name": "Prisma",
+     "archived": false,
+     "released": false,
+     "projectId": 32046
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "version",
+    "system": "fixVersions"
+   },
+   "name": "Fix Version/s",
+   "fieldId": "fixVersions",
+   "hasDefaultValue": false,
+   "operations": [
+    "set",
+    "add",
+    "remove"
+   ],
+   "allowedValues": [
+    {
+     "id": "96972",
+     "name": "v0.193.0",
+     "archived": true,
+     "released": false,
+     "projectId": 32046
+    },
+    {
+     "id": "96973",
+     "name": "v0.192.0",
+     "archived": true,
+     "released": true,
+     "userReleaseDate": "04/Dec/22",
+     "projectId": 32046,
+     "releaseDate": "2022-12-04"
+    },
+    {
+     "id": "97064",
+     "name": "unified-pc-february",
+     "archived": false,
+     "released": true,
+     "userStartDate": "04/Nov/24",
+     "userReleaseDate": "15/Feb/25",
+     "projectId": 32046,
+     "startDate": "2024-11-04",
+     "releaseDate": "2025-02-15"
+    },
+    {
+     "id": "100424",
+     "name": "unified-pc-february-HF3",
+     "archived": false,
+     "released": true,
+     "userReleaseDate": "29/Mar/25",
+     "projectId": 32046,
+     "releaseDate": "2025-03-29"
+    },
+    {
+     "id": "100929",
+     "name": "Prisma",
+     "archived": false,
+     "released": false,
+     "projectId": 32046
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "priority",
+    "system": "priority"
+   },
+   "name": "Priority",
+   "fieldId": "priority",
+   "hasDefaultValue": true,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "name": "Blocker",
+     "id": "10000"
+    },
+    {
+     "name": "High",
+     "id": "2"
+    },
+    {
+     "name": "Medium",
+     "id": "3"
+    },
+    {
+     "name": "Low",
+     "id": "4"
+    }
+   ],
+   "defaultValue": {
+    "name": "Medium",
+    "id": "3"
+   }
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "string",
+    "system": "labels"
+   },
+   "name": "Labels",
+   "fieldId": "labels",
+   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/1.0/labels/suggest?query=",
+   "hasDefaultValue": false,
+   "operations": [
+    "add",
+    "set",
+    "remove"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "string",
+    "system": "environment"
+   },
+   "name": "Environment",
+   "fieldId": "environment",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "string",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+    "customId": 18843
+   },
+   "name": "Steps To Reproduce",
+   "fieldId": "customfield_18843",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "attachment",
+    "system": "attachment"
+   },
+   "name": "Attachment",
+   "fieldId": "attachment",
+   "hasDefaultValue": false,
+   "operations": []
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "issuelinks",
+    "system": "issuelinks"
+   },
+   "name": "Linked Issues",
+   "fieldId": "issuelinks",
+   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/2/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=null&query=",
+   "hasDefaultValue": false,
+   "operations": [
+    "add"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "string",
+    "custom": "com.pyxis.greenhopper.jira:gh-sprint",
+    "customId": 10020
+   },
+   "name": "Sprint",
+   "fieldId": "customfield_10020",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 20157
+   },
+   "name": "Quality-debt",
+   "fieldId": "customfield_20157",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Known-issue",
+     "id": "44373",
+     "disabled": false
+    },
+    {
+     "value": "Product-Limitation",
+     "id": "44374",
+     "disabled": false
+    },
+    {
+     "value": "None",
+     "id": "44375",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "number",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float",
+    "customId": 10021
+   },
+   "name": "Story Points",
+   "fieldId": "customfield_10021",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "string",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+    "customId": 19136
+   },
+   "name": "CDL",
+   "fieldId": "customfield_19136",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 19127
+   },
+   "name": "CDL Region",
+   "fieldId": "customfield_19127",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "US",
+     "id": "21961",
+     "disabled": false
+    },
+    {
+     "value": "AU",
+     "id": "21967",
+     "disabled": false
+    },
+    {
+     "value": "CA",
+     "id": "21966",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "array",
+    "items": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+    "customId": 28639
+   },
+   "name": "Hotfix",
+   "fieldId": "customfield_28639",
+   "hasDefaultValue": true,
+   "operations": [
+    "add",
+    "set",
+    "remove"
+   ],
+   "allowedValues": [
+    {
+     "value": "Yes",
+     "id": "50324",
+     "disabled": false
+    },
+    {
+     "value": "No",
+     "id": "50325",
+     "disabled": false
+    }
+   ],
+   "defaultValue": [
+    {
+     "value": "No",
+     "id": "50325",
+     "disabled": false
+    }
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "user",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker",
+    "customId": 19678
+   },
+   "name": "Cortex PM-",
+   "fieldId": "customfield_19678",
+   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/1.0/users/picker?fieldName=customfield_19678&query=",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "option",
+    "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+    "customId": 27220
+   },
+   "name": "Deployment Type",
+   "fieldId": "customfield_27220",
+   "hasDefaultValue": true,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "value": "Major Release",
+     "id": "56916",
+     "disabled": false
+    },
+    {
+     "value": "HotFix",
+     "id": "56917",
+     "disabled": false
+    },
+    {
+     "value": "Ad-hoc",
+     "id": "56918",
+     "disabled": false
+    }
+   ],
+   "defaultValue": {
+    "value": "Major Release",
+    "id": "56916",
+    "disabled": false
+   }
+  },
+  {
+   "required": false,
+   "schema": {
+    "type": "user",
+    "system": "assignee"
+   },
+   "name": "Assignee",
+   "fieldId": "assignee",
+   "autoCompleteUrl": "https://jira-dc.paloaltonetworks.com/rest/api/latest/user/assignable/search?issueKey=null&username=",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ]
+  },
+  {
+   "required": true,
+   "schema": {
+    "type": "project",
+    "system": "project"
+   },
+   "name": "Project",
+   "fieldId": "project",
+   "hasDefaultValue": false,
+   "operations": [
+    "set"
+   ],
+   "allowedValues": [
+    {
+     "id": "32046",
+     "key": "BCE",
+     "name": "Bridgecrew Engineering",
+     "projectCategory": {
+      "id": "11700",
+      "name": "Cloud Security"
+     }
+    }
+   ]
+  }
+ ]
+}

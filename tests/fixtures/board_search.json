@@ -1,0 +1,4 @@
+{"startAt":0,"maxResults":200,"total":3,"issues":[
+ {"id":"1","key":"BCE-1","fields":{"summary":"First","issuetype":{"name":"Task"},"status":{"id":"10000","name":"To Do","statusCategory":{"key":"new"}},"priority":{"name":"Major"},"assignee":{"name":"jdoe","displayName":"Jane Doe"},"updated":"2026-10-18T12:00:00.000+0000"}},
+ {"id":"2","key":"BCE-2","fields":{"summary":"Second","issuetype":{"name":"Bug"},"status":{"id":"3","name":"In Progress","statusCategory":{"key":"indeterminate"}},"priority":{"name":"High"},"assignee":null,"updated":"2026-10-18T12:00:00.000+0000"}},
+ {"id":"3","key":"BCE-3","fields":{"summary":"Third","issuetype":{"name":"Task"},"status":{"id":"10001","name":"Done","statusCategory":{"key":"done"}},"priority":null,"assignee":null,"updated":"2026-10-18T12:00:00.000+0000"}}]}

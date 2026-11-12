@@ -1,0 +1,19 @@
+---
+source: tests/cli.rs
+expression: text
+---
+4166  BCE board
+Type       scrum
+Sprint     BCE-26-Sprint-21
+Filter     117549
+URL        http://jira/secure/RapidBoard.jspa?rapidView=4166
+Tickets    3
+
+To Do (1)
+  BCE-1  First  @jdoe
+
+In Progress (1)
+  BCE-2  Second
+
+Done (1)
+  BCE-3  Third

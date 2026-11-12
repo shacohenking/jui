@@ -1,0 +1,15 @@
+---
+source: tests/cli.rs
+expression: "shape.join(\"\\n\")"
+---
+BCE-26-Sprint-21 (active) · 1
+Key
+  BCE-63337
+
+BCE-26-Sprint-22 (future) · 1
+Key
+  XSUP-1182
+
+No Sprint · 1
+Key
+  BCE-62886

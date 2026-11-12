@@ -1,0 +1,20 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 16)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌ JQL ─────────────────────────────────────────────────────────────────────────────────────────────┐
+│project = BCE                                                                                     │
+└────────────────────────────────────────────── Enter run · ↑↓ history · Ctrl-F filters · Esc list ┘
+┌Search────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│  Push / to type a JQL query, then push Enter. Examples:                                          │
+│                                                                                                  │
+│    project = BCE AND status = "In Progress"                                                      │
+│    text ~ "login" ORDER BY updated DESC                                                          │
+│    reporter = currentUser() AND created >= -7d                                                   │
+│                                                                                                  │
+│  Ctrl-F runs a favourite filter, or any filter by its ID.                                        │
+│                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+| Type JQL · Enter run · ↑↓ history · Ctrl-F filters · Esc go to the list

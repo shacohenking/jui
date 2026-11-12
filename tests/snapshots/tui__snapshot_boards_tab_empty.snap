@@ -1,0 +1,14 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 10)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+ No Boards · + add
+┌Boards────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│  My Boards is empty. Push + to select Boards.                                                    │
+│                                                                                                  │
+│  The Board picker suggests your recent Boards and the Boards of the default project.             │
+│  Or use `jui board add <id>` in the shell.                                                       │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+h/l column · j/k card · [ ] Board · m mine · + Boards · x remove · Enter zoom · t move · ? help

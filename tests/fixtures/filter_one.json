@@ -1,0 +1,13 @@
+{
+  "self": "https://jira.example/rest/api/2/filter/117549",
+  "id": "117549",
+  "name": "Filter for BCE board",
+  "description": "",
+  "owner": {"name": "jdoe", "displayName": "Jane Doe", "active": true},
+  "jql": "project = BCE ORDER BY Rank ASC",
+  "viewUrl": "https://jira.example/issues/?filter=117549",
+  "searchUrl": "https://jira.example/rest/api/2/search?jql=project+%3D+BCE+ORDER+BY+Rank+ASC",
+  "favourite": false,
+  "sharePermissions": [],
+  "subscriptions": {"size": 0, "items": [], "max-results": 0, "start-index": 0, "end-index": 0}
+}

@@ -1,0 +1,343 @@
+{
+ "expand": "transitions",
+ "transitions": [
+  {
+   "id": "11",
+   "name": "To Do",
+   "to": {
+    "id": "10000",
+    "name": "To Do",
+    "statusCategory": {
+     "key": "new"
+    }
+   },
+   "fields": {}
+  },
+  {
+   "id": "21",
+   "name": "In Progress",
+   "to": {
+    "id": "3",
+    "name": "In Progress",
+    "statusCategory": {
+     "key": "indeterminate"
+    }
+   },
+   "fields": {
+    "fixVersions": {
+     "required": false,
+     "schema": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+     },
+     "name": "Fix Version/s",
+     "fieldId": "fixVersions",
+     "operations": [
+      "set",
+      "add",
+      "remove"
+     ],
+     "allowedValues": [
+      {
+       "id": "96972",
+       "name": "v0.193.0",
+       "archived": true,
+       "released": false
+      },
+      {
+       "id": "96973",
+       "name": "v0.192.0",
+       "archived": true,
+       "released": true
+      },
+      {
+       "id": "96974",
+       "name": "v0.191.0",
+       "archived": true,
+       "released": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "31",
+   "name": "Done",
+   "to": {
+    "id": "10001",
+    "name": "Done",
+    "statusCategory": {
+     "key": "done"
+    }
+   },
+   "fields": {
+    "resolution": {
+     "required": true,
+     "schema": {
+      "type": "resolution",
+      "system": "resolution"
+     },
+     "name": "Resolution",
+     "fieldId": "resolution",
+     "operations": [
+      "set"
+     ],
+     "allowedValues": [
+      {
+       "name": "Won't Do",
+       "id": "10001"
+      },
+      {
+       "name": "Duplicate",
+       "id": "10002"
+      },
+      {
+       "name": "Done",
+       "id": "10401"
+      }
+     ]
+    },
+    "customfield_10021": {
+     "required": false,
+     "schema": {
+      "type": "number",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:float"
+     },
+     "name": "Story Points",
+     "fieldId": "customfield_10021",
+     "operations": [
+      "set"
+     ]
+    },
+    "fixVersions": {
+     "required": false,
+     "schema": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+     },
+     "name": "Fix Version/s",
+     "fieldId": "fixVersions",
+     "operations": [
+      "set",
+      "add",
+      "remove"
+     ],
+     "allowedValues": [
+      {
+       "id": "96972",
+       "name": "v0.193.0",
+       "archived": true,
+       "released": false
+      },
+      {
+       "id": "96973",
+       "name": "v0.192.0",
+       "archived": true,
+       "released": true
+      },
+      {
+       "id": "96974",
+       "name": "v0.191.0",
+       "archived": true,
+       "released": true
+      }
+     ]
+    },
+    "customfield_18256": {
+     "required": false,
+     "schema": {
+      "type": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:userpicker"
+     },
+     "name": "QA Assignee",
+     "fieldId": "customfield_18256",
+     "operations": [
+      "set"
+     ]
+    }
+   }
+  },
+  {
+   "id": "41",
+   "name": "In Pull Request",
+   "to": {
+    "id": "20304",
+    "name": "In Pull Request",
+    "statusCategory": {
+     "key": "indeterminate"
+    }
+   },
+   "fields": {
+    "fixVersions": {
+     "required": false,
+     "schema": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+     },
+     "name": "Fix Version/s",
+     "fieldId": "fixVersions",
+     "operations": [
+      "set",
+      "add",
+      "remove"
+     ],
+     "allowedValues": [
+      {
+       "id": "96972",
+       "name": "v0.193.0",
+       "archived": true,
+       "released": false
+      },
+      {
+       "id": "96973",
+       "name": "v0.192.0",
+       "archived": true,
+       "released": true
+      },
+      {
+       "id": "96974",
+       "name": "v0.191.0",
+       "archived": true,
+       "released": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "51",
+   "name": "Awaiting Deployment",
+   "to": {
+    "id": "20303",
+    "name": "Awaiting Deployment",
+    "statusCategory": {
+     "key": "indeterminate"
+    }
+   },
+   "fields": {
+    "fixVersions": {
+     "required": false,
+     "schema": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+     },
+     "name": "Fix Version/s",
+     "fieldId": "fixVersions",
+     "operations": [
+      "set",
+      "add",
+      "remove"
+     ],
+     "allowedValues": [
+      {
+       "id": "96972",
+       "name": "v0.193.0",
+       "archived": true,
+       "released": false
+      },
+      {
+       "id": "96973",
+       "name": "v0.192.0",
+       "archived": true,
+       "released": true
+      },
+      {
+       "id": "96974",
+       "name": "v0.191.0",
+       "archived": true,
+       "released": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "101",
+   "name": "Ready for Development",
+   "to": {
+    "id": "17219",
+    "name": "Ready for Development",
+    "statusCategory": {
+     "key": "new"
+    }
+   },
+   "fields": {}
+  },
+  {
+   "id": "121",
+   "name": "Blocked",
+   "to": {
+    "id": "10300",
+    "name": "Blocked",
+    "statusCategory": {
+     "key": "indeterminate"
+    }
+   },
+   "fields": {}
+  },
+  {
+   "id": "151",
+   "name": "Pending Validation",
+   "to": {
+    "id": "20302",
+    "name": "Pending Validation",
+    "statusCategory": {
+     "key": "indeterminate"
+    }
+   },
+   "fields": {
+    "fixVersions": {
+     "required": false,
+     "schema": {
+      "type": "array",
+      "items": "version",
+      "system": "fixVersions"
+     },
+     "name": "Fix Version/s",
+     "fieldId": "fixVersions",
+     "operations": [
+      "set",
+      "add",
+      "remove"
+     ],
+     "allowedValues": [
+      {
+       "id": "96972",
+       "name": "v0.193.0",
+       "archived": true,
+       "released": false
+      },
+      {
+       "id": "96973",
+       "name": "v0.192.0",
+       "archived": true,
+       "released": true
+      },
+      {
+       "id": "96974",
+       "name": "v0.191.0",
+       "archived": true,
+       "released": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "161",
+   "name": "New",
+   "to": {
+    "id": "15500",
+    "name": "New",
+    "statusCategory": {
+     "key": "new"
+    }
+   },
+   "fields": {}
+  }
+ ]
+}

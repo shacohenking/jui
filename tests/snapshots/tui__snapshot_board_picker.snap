@@ -1,0 +1,28 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 100, 24)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+ [ 1/1 ] BCE board (scrum) · Sprint 21 · 3 Tickets
+┌ To Do (2) ────────────────────┐┌ Review (0) ────────────────────┐┌ Done (1) ─────────────────────┐
+│BCE-1                          ││ (empty)                        ││BCE-3                          │
+│ Summary of BCE-1              ││                                ││ Summary of BCE-3              │
+│BCE-2                          ││                                ││                               │
+│ Summary of BCE-2              ││                                ││                               │
+│           ┌ My Boards ───────────────────────────────────────────────────────────────┐           │
+│           │ Board: ▏                                                                 │           │
+└───────────│                                                                          │───────────┘
+┌Preview────│   [x] 4166  BCE board  scrum  (mine)                                     │───────────┐
+│BCE-1  Summ│ ▶ [x] 4537  PostOps Stitch  scrum  (recent)                              │           │
+│To Do · Tas│   [ ] 4533  BCE Kanban Board  kanban                                     │           │
+│Assignee   │                                                                          │           │
+│           │ 2 Boards marked (changed)                                                │           │
+│           │ Type to search · ↑↓ select · Space mark · Enter save · Esc cancel        │           │
+│Loading the└──────────────────────────────────────────────────────────────────────────┘           │
+│                                                                                                  │
+│                                                                                                  │
+│                                                                                                  │
+│                                                                                                  │
+│                                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+| h/l column · j/k card · [ ] Board · m mine · + Boards · x remove · Enter zoom · t move · ? help

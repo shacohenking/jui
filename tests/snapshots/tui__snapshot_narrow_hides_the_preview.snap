@@ -1,0 +1,14 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 80, 10)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets (6)────────────────────────────────────────────────────────────────┐
+│  Key   Status      Summary                                                   │
+│▶ BCE-0 In Progress Summary of Ticket 0                                       │
+│  BCE-1 To Do       Summary of Ticket 1                                       │
+│  BCE-2 To Do       Summary of Ticket 2                                       │
+│  BCE-3 In Progress Summary of Ticket 3                                       │
+│  BCE-4 To Do       Summary of Ticket 4                                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+| j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w wat

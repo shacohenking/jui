@@ -1,0 +1,60 @@
+---
+source: src/core/template/tests.rs
+expression: t
+---
++++
+# Edit BCE-63337. Save and close the editor to send the changes.
+# Close with no changes to cancel. jui sends only the fields that you change.
+# project = "BCE"   (jui cannot change the project or the type)
+# type = "Bug"
+summary = "Scanner stops on an empty file"
+# Permitted: AppSec-Frontend, ASPM-Application, ASPM-CICD, ASPM-ConnectX, ASPM-Nexus, CAS-Documentation, CAS-Managers, CAS-products, CAS-Tech-leaders, DCO-DataStream, ... (12 values, see the list below the scissors line)
+components = ["ASPM-Application"]
+labels = ["scanner"]
+# Permitted: Blocker, High, Medium, Low
+priority = "High"
+assignee = "jdoe"
+reporter = "jdoe"
+epic = "BCE-47921"            # customfield_10016
+# Permitted: unified-pc-february, unified-pc-february-HF3, Prisma
+fix_versions = ["v0.1.0-old"]
+# Permitted: unified-pc-february, unified-pc-february-HF3, Prisma
+affects_versions = ["unified-pc-february"]
+# story_points = 1              # customfield_10021
+# Permitted: Yes, No
+detected_in_production = "No" # customfield_26910
+# Permitted: Yes, No
+regression = "No"             # customfield_26903
+# Permitted: Critical, Major, Moderate, Minor, Normal
+severity = "Major"            # customfield_11908
+# Permitted: Cortex, Prisma
+bug_source = "Prisma"         # customfield_19283
+# Permitted: Major Release, HotFix, Ad-hoc
+deployment_type = "HotFix"    # customfield_27220
+steps_to_reproduce = "Run it." # customfield_18843
++++
+
+### Steps
+
+1. Run the scanner on an empty file.
+2. See the error.
+
+The result is `jira:{color:#de350b}Failed{color}`.
+
+# ------------------------ >8 ------------------------
+# jui ignores this line and all lines below it.
+#
+# components (all 12 values):
+#   AppSec-Frontend, ASPM-Application, ASPM-CICD, ASPM-ConnectX, ASPM-Nexus,
+#   CAS-Documentation, CAS-Managers, CAS-products, CAS-Tech-leaders, DCO-DataStream,
+#   DCO-DXCore, DCO-Flow
+#
+# Other fields that you can add to the header:
+#   target_start = ...  (Target start, date YYYY-MM-DD)
+#   target_end = ...  (Target end, date YYYY-MM-DD)
+#   cdl_region = ...  (CDL Region, one permitted value)
+#   cdl = ...  (CDL, text)
+#   cortex_pm = ...  (Cortex PM-, username)
+#   quality_debt = ...  (Quality-debt, one permitted value)
+#   functional_team = ...  (Functional Team, list of permitted values)
+#   environment = ...  (Environment, text)

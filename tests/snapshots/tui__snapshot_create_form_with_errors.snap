@@ -1,0 +1,38 @@
+---
+source: tests/tui.rs
+expression: "draw(&mut st, 120, 34)"
+---
+ 1 My Tickets │ 2 Boards │ 3 Sprint │ 4 Epics │ 5 Search │ 6 Settings
+┌My Tickets (5)────────────────────────────────────────────┐┌Preview───────────────────────────────────────────────────┐
+│  Key   Status      Summary                               ││BCE-0  Summary of Ticket 0                                │
+│▶ BCE-0 In Progress Summary of Ticket 0                   ││In Progress · Task · Major                                │
+│  BCE-1 To Do       Summary of Ticket 1                   ││Assignee   Unassigned                                     │
+│  BCE-2 To Do       Summary of Ticket 2                   ││                                                          │
+│  BCE-3 In Progress Summary of Ticket 3                   ││Goal 0                                                    │
+│  BCE-4 To Do       Summary of Ticket 4                   ││                                                          │
+│                                                          ││Text of Ticket 0.                                         │
+│              ┌ Create a Task in BCE ──────────────────────────────────────────────────────────────────┐              │
+│              │                                                                                        │              │
+│              │   Summary*      Only a summary                                                         │              │
+│              │ ▶ Component/s*  ▏ type to filter · ↓ select · Enter add                                │              │
+│              │     a value is required.                                                               │              │
+│              │   Assignee                                                                             │              │
+│              │   Priority      Urgent                                                                 │              │
+│              │     "Urgent" is not a permitted value. Permitted: Blocker, High, Medium, Low           │              │
+│              │   Labels                                                                               │              │
+│              │   Epic Link                                                                            │              │
+│              │   Fix Version/s                                                                        │              │
+│              │   Story Points                                                                         │              │
+│              │                                                                                        │              │
+│              │   Description (Markdown, Enter new line)                                               │              │
+│              │   │                                                                                    │              │
+│              └────────── Ctrl-S create · Tab next · Ctrl-E editor (all fields) · Esc cancel ──────────┘              │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+│                                                          ││                                                          │
+└──────────────────────────────────────────────────────────┘└──────────────────────────────────────────────────────────┘
+| j/k move · Enter zoom · t move · c comment · a assign · e edit · n new · w watch · y copy · ? help
