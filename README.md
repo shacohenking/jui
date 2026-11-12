@@ -4,9 +4,19 @@ jui is a personal Jira client for one Jira Data Center server. It has a CLI and 
 
 ## Install
 
-You must have Rust 1.88 or a newer version.
+jui needs Rust 1.88 or a newer version.
 
 ### One-liner
+
+This checks for Rust (and installs or updates it with rustup, after it asks you), then installs jui:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/shacohenking/jui/main/install.sh | sh
+```
+
+Set `JUI_YES=1` before `sh` to skip the questions (`curl ... | JUI_YES=1 sh`). To read the script first, open `install.sh` in this repository.
+
+If you already have Rust 1.88 or newer, you can use Cargo directly:
 
 ```sh
 cargo install --git https://github.com/shacohenking/jui --locked
